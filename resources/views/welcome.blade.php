@@ -11,6 +11,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/lu-styles.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="container-fluid">
@@ -33,8 +34,8 @@
             @endif
             </div>
 
-            <div class="d-flex justify-content-center bg-secondary mt-3">
-                <h1>Frontend</h1>
+            <div class="bg-light-gray d-flex justify-content-center align-items-center" style="height: 400px;">
+                Hola
             </div>
         </div>
     </body>

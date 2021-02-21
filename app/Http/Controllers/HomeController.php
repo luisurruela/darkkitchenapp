@@ -25,4 +25,18 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function config() {
+        return view('admin.home');
+    }
+
+    public function profile()
+    {
+        return view('admin.profile');
+    }
+
+    public function passwords()
+    {
+        return view('admin.passwords');
+    }
 }

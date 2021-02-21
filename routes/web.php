@@ -24,3 +24,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+  
+    Route::get('admin/home', [App\Http\Controllers\HomeController::class, 'config'])->name('home-config');
+    Route::get('admin/settings', [App\Http\Controllers\HomeController::class, 'profile'])->name('admin.profile');
+    Route::get('admin/passwords', [App\Http\Controllers\HomeController::class, 'passwords'])->name('admin.passwords');
+
+});

@@ -3,18 +3,17 @@
 @section('title', 'Darkkitchen Dashboard')
 
 @section('content_header')
-    <h1>Darkkitchen Dashboard</h1>
+    <h1>Configuraciones del Home</h1>
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <livewire:home-config />
 @stop
 
 @section('css')
-    @livewireStyles
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
 
 @section('js')
-    @livewireScripts
+    
 @stop
